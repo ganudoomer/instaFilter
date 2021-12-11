@@ -11,6 +11,8 @@
 		22443A1C27648D3D0085AB87 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22443A1B27648D3D0085AB87 /* ContentView.swift */; };
 		22443A1E27648D3E0085AB87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22443A1D27648D3E0085AB87 /* Assets.xcassets */; };
 		22443A2127648D3E0085AB87 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22443A2027648D3E0085AB87 /* Preview Assets.xcassets */; };
+		22FBCB5127649233009797BD /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FBCB5027649233009797BD /* ImagePicker.swift */; };
+		22FBCB532764923B009797BD /* ImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FBCB522764923B009797BD /* ImageSaver.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,9 @@
 		22443A1B27648D3D0085AB87 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		22443A1D27648D3E0085AB87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22443A2027648D3E0085AB87 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		22FBCB5027649233009797BD /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		22FBCB522764923B009797BD /* ImageSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSaver.swift; sourceTree = "<group>"; };
+		22FBCB542764AF1F009797BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +56,11 @@
 		22443A1827648D3D0085AB87 /* instaFilter */ = {
 			isa = PBXGroup;
 			children = (
+				22FBCB542764AF1F009797BD /* Info.plist */,
 				22443A1927648D3D0085AB87 /* instaFilterApp.swift */,
 				22443A1B27648D3D0085AB87 /* ContentView.swift */,
+				22FBCB5027649233009797BD /* ImagePicker.swift */,
+				22FBCB522764923B009797BD /* ImageSaver.swift */,
 				22443A1D27648D3E0085AB87 /* Assets.xcassets */,
 				22443A1F27648D3E0085AB87 /* Preview Content */,
 			);
@@ -137,8 +145,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22FBCB5127649233009797BD /* ImagePicker.swift in Sources */,
 				22443A1C27648D3D0085AB87 /* ContentView.swift in Sources */,
 				22443A1A27648D3D0085AB87 /* instaFilterApp.swift in Sources */,
+				22FBCB532764923B009797BD /* ImageSaver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +282,8 @@
 				DEVELOPMENT_TEAM = 9WK5FXP8MA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = instaFilter/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need access to photos to save files";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -301,6 +313,8 @@
 				DEVELOPMENT_TEAM = 9WK5FXP8MA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = instaFilter/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need access to photos to save files";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
